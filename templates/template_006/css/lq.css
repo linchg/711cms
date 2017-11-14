@@ -1,0 +1,971 @@
+
+/* common */
+*{padding:0;margin:0;list-style:none;border:none;outline:none; text-decoration:none; font-family:'MicroSoft YaHei';}
+body{ background:#f2f3f5;}
+h1,h2,h3,.app_name{ overflow:hidden; text-overflow:ellipsis;white-space:nowrap;}
+h1{font-size: 100%;}
+/* layout */
+.box{ width:980px; margin:0 auto; overflow:hidden;}
+.box2{ width:980px; padding:0 30px; margin:0 auto; overflow:hidden;}
+.fl{ float:left;}
+.fr{ float:right;}
+.box_bg{ background:#fff; margin-top:15px;}
+.b_main{ width:700px; background:#fff; margin-top:15px;}
+.b_sub{ width:265px; background:#fff; margin-top:15px;}
+.as_main{ width:728px; background:#fff; margin-top:15px;}
+.as_sub{ width:237px; background:#fff; margin-top:15px;}
+.article_main{ width:665px; background:#fff; margin:15px 0;}
+.article_sub{ width:300px; background:#fff; margin:15px 0;}
+.rom_main{ width:700px; margin-top:15px}
+.rom_sub{ width:265px; margin-top:15px;}
+.con_main{ width:715px; float:left;}
+.con_sub{ width:265px; float:left;}
+.wy{ overflow:hidden;}
+.wy_l{ width:270px; float:left;}
+.wy_r{ width:429px; border-left:1px solid #f2f3f5; float:right;}
+
+/*top*/
+.top{ height:30px; font:normal 12px/30px ''; color:#888; background:#EEE; border-bottom:1px solid #ddd;}
+.top strong{ color:#666;}
+.top span{ padding:0 12px;}
+.top span a{ color:#999; margin:0 12px;}
+.choose{ margin:0 20px; text-decoration:underline;}
+.wb{ float:right;}
+.wb a{ background:url(../images/icon.png) no-repeat; color:#999; padding-left:25px; display:inline-block;}
+.wb a:hover{ color:#666;}
+.wb a.wb_sina{ background-position:0 -345px; padding-right:15px;}
+.wb a.wb_tx{ background-position:0 -375px;}
+.top_a{ color:#666}
+
+/* header */
+.header{ width:980px; height:60px; padding:18px 0; margin:0 auto;}
+.logo{ width:158px; height:50px; float:left;}
+.system{ height:40px; float:left; margin:7px 0 0 5px;}
+.system li{ width:40px; height:40px; background:url(../images/system.png) no-repeat; margin-left:15px; float:left; cursor:pointer;}
+.system li.s01{ background-position:0 0;}
+.system li.s02{ background-position:0 -40px;}
+.system li.s03{ background-position:0 -80px;}
+.system li.s11{ background-position:-40px 0;}
+.system li.s12{ background-position:-40px -40px;}
+.system li.s13{ background-position:-40px -80px;}
+.hot_word{ width:80px; font:normal 12px/22px ''; margin:6px 0 0 15px; float:right;}
+.hot_word a{ height:22px; color:#999; text-decoration:underline; display:block; overflow:hidden; text-overflow:ellipsis;white-space:nowrap;}
+.choose_xt{ font:normal 18px/45px 'MicroSoft YaHei'; background:url(../images/tri_xt.png) no-repeat right; color:#777; padding:5px 15px 0 0; float:left; cursor:pointer; position:relative;}
+.xt_pop{ width:105px; background:#fff; border:1px solid #ddd; border-top:none; position:absolute; top:6px; left:-10px; z-index:99; display:none;}
+.xt_pop b,.xt_pop a{ height:40px; border-top:1px solid #ddd; font:normal 16px/40px 'MicroSoft YaHei'; display:block; padding-left:10px;}
+.xt_pop b{ font-size:18px; vertical-align:middle;}
+.xt_pop a{ color:#333;}
+.xt_pop em{ width:10px; height:10px; background:url(../images/tri_xt2.png) no-repeat; display:inline-block;}
+.search{ width:370px; height:33px; float:right; padding:2px; margin-top:10px; overflow:hidden;}
+.txt_search{ width:270px; height:33px; font:normal 12px/33px ''; padding:0 5px; float:left;}
+.btn_search{ width:90px; height:33px; font:normal 16px/33px ''; color:#fff; text-align:center; cursor:pointer; float:left;}
+.menu{ height:40px;}
+.m_main{ height:40px; background:#3E3E3E;}
+.min{ width:980px; height:40px; margin:0 auto;}
+.m_sub{ width:940px; height:40px; font:normal 14px/40px ''; padding:0 20px; margin:0 auto;}
+.min ul{ float:left;}
+.min ul li{ width:120px; height:40px; font:normal 16px/40px ''; text-align:center; border-right:1px solid #525252; float:left;}
+.min ul li a{ color:#fff; display:block;}
+.min ul li em{ width:25px; height:20px; background:url(../images/icon.png) no-repeat; display:inline-block; vertical-align:middle;}
+.min ul li em.mem01{ background-position:0 -80px;}
+.min ul li em.mem02{ background-position:0 -105px;}
+.min ul li em.mem03{ background-position:5px -135px;}
+.min ul li em.mem04{ background-position:0 -160px;}
+.market{ width:150px; height:28px; margin-top:9px; position:relative; float:right;}
+.market em{ width:26px; height:14px; background:url(../images/icon.png) 0 -55px no-repeat; position:absolute; top:-15px; left:18px;}
+.m_sub{ font:normal 14px/40px ''; color:#fff;}
+.m_sub b{ color:#fff; font-weight:normal;}
+.m_sub a{ color:#fff; margin:0 25px;}
+.pos{ font:normal 12px/20px ''; color:#666; padding-top:12px;}
+.pos a{ color:#666;}
+.pos b{ font:normal 10px/20px Verdana; color:#aaa; padding:0 10px;}
+
+/* focus */
+.focus{width:580px;height:265px;position:relative; margin:15px 0;float:left}
+.f580x265{width:580px;height:265px;overflow:hidden}
+.f580x265 img{width:580px;height:265px}
+.rslides{width:100%;position:relative;list-style:none;padding:0}
+.rslides_nav{height:51px;width:31px;position:absolute;top:107px;left:0;-webkit-tap-highlight-color:rgba(0,0,0,0);opacity:0.5;text-indent:-9999px;overflow:hidden;background:url(../images/icon.png) no-repeat}
+.rslides_nav:active{opacity:1.0}
+.rslides_nav.next{left:auto;background-position:-31px 0;right:0}
+.rslides_tabs{text-align:center; position:absolute; bottom:9px; right:9px;}
+.rslides_tabs li{display:inline;float:none;float:left\9;margin:0 5px}
+.rslides_tabs a{text-indent:-9999px;overflow:hidden; border-radius:15px;background:rgba(0,0,0, .2);background:#DDD;display:inline-block;width:9px;height:9px}
+
+/* news */
+.news{ width:385px; height:265px; background:#fff; margin:15px 0; float:right;}
+.main_tit{ height:38px; font:bold 16px/38px 'MicroSoft YaHei'; border-bottom:1px solid #f2f3f5; padding:0 15px; overflow:hidden;}
+.sub_tit{ height:40px; font:bold 16px/40px 'MicroSoft YaHei'; color:#333; border-bottom:1px solid #F2F3F5; padding:0 15px; overflow:hidden;}
+.sub_tit a{ color:#4ac15c;}
+.more{ font:normal 12px/40px ''; float:right;}
+.more s{ width:8px; height:15px; background:url(../images/icon.png) no-repeat; display:inline-block; vertical-align:middle;}
+.headline{ padding:10px 12px; overflow:hidden;}
+.head_icon{ border:3px solid #ddd; border-radius:100%; margin-right:15px; float:left;}
+.head_icon img{ width:72px; height:72px; border-radius:100%;}
+.head_img{ border:3px solid #ddd; margin-right:15px; float:left;}
+.head_img img{ width:135px; height:72px;}
+.head_w .app_name{ height:30px; font:bold 14px/30px 'MicroSoft YaHei'; color:#444; overflow:hidden}
+.head_w .app_name a{ color:#444;}
+.head_w p{ height:44px; font:normal 12px/22px ''; color:#444; overflow:hidden;}
+.news_list{ border-top:1px dotted #aaa; padding-top:9px; margin:0 15px;}
+.news_list li{ height:20px; padding:3px 0; overflow:hidden; text-overflow:ellipsis;white-space:nowrap;}
+.news_list li a{ font:normal 12px/20px ''; color:#444;}
+.news_list li a:hover{ text-decoration:underline;}
+.news_list li em{ height:18px; padding:0 8px; margin:0 8px 0 2px; display:inline-block;}
+.news_list li em a{ line-height:18px; color:#fff;}
+.news_list li em a:hover{ text-decoration:none;}
+.news_list li b{ font:normal 12px/20px ''; color:#999; margin-right:12px;}
+
+/* hot_tag */
+.hot_list{ width:980px; background:#fff; margin:0 auto;}
+.hot_list li{ width:915px; padding-left:65px; position:relative;}
+.hot_tit{ width:62px; height:23px; background:url(../images/icon.png) 0 -220px no-repeat; font:bold 12px/20px ''; text-align:center; position:absolute; left:-5px; top:10px;}
+.hot_01{ border-bottom:1px dotted #aaa;}
+.hot_01 .hot_tit{ background-position:0 -190px}
+.hot_tit a{ color:#fff;}
+.hot_tag{ height:20px; color:#cecece; font-size:10px; padding:10px 0; overflow:hidden;}
+.hot_tag p{height:20px; overflow:hidden}
+.hot_tag a{ font:normal 12px/20px ''; color:#666; margin:0 13px;}
+.hot_tag a:hover{ text-decoration:none;color:green;}
+.hot_tag a strong{ color:#f30;}
+
+/* list */
+.list_tj{ padding:0 0 22px 10px; overflow:hidden;}
+.list_tj li{ width:85px; padding:20px 14px 0 14px; float:left;}
+.list_tj li a{ color:#666;}
+.list_tj li p{ height:20px; font:normal 14px/20px Arial; text-align:center; overflow:hidden; text-overflow:ellipsis;white-space:nowrap; padding-top:6px;}
+.list_tj li .pic{ width:72px; height:72px; position:relative; margin:0 auto; display:block;}
+.list_tj li .pic img{ width:72px; height:72px; border-radius:10%;}
+.em_sf{ width:41px; height:41px; background:url(../images/icon.png) 0 -255px no-repeat; position:absolute; left:0; top:0;}
+.list_rank{ padding:0 15px;}
+.list_rank li{ height:36px; border-bottom:1px dotted #aaa; overflow:hidden;}
+.list_rank li span{ font:normal 12px/36px Arial; color:#aaa; float:right;}
+.list_rank li span a{ color:#aaa;}
+.list_rank li a{ font:normal 12px/36px Arial; color:#666;}
+.list_rank li a:hover{ text-decoration:underline;}
+.list_rank li b{ width:20px; font:normal 12px/36px Verdana; padding-right:5px; text-align:right; color:#999; display:inline-block;}
+.list_rank li b.num{ color:#f30;}
+.list_rank li i{ width:180px; height:36px; display:inline-block; overflow:hidden; text-overflow:ellipsis;white-space:nowrap;}
+.list_rank li em{ float:right; font:bold 12px/36px Verdana; color:#f30;}
+
+.b_all{ margin-top:15px; background:#fff; overflow:hidden;}
+.all_tit{ height:38px; font:bold 16px/38px 'MicroSoft YaHei'; border-bottom:1px solid #f2f3f5;}
+.all_tit li{ width:110px; font:bold 16px/38px 'MicroSoft YaHei'; border-right:1px solid #f2f3f5; text-align:center; float:left; cursor:pointer;}
+.tit_on{ color:#fff;}
+.c_hottag{ width:665px; height:35px; border:1px solid #dfdfdf; background:#f1f1f1; padding:0 10px; margin:15px 15px 0 15px; overflow:hidden;}
+.c_hottag a{ color:#666; font:normal 14px/35px 'MicroSoft YaHei'; margin:0 7px; display:inline-block}
+.c_hottag a:hover{ text-decoration:underline;}
+.con{ position:relative}
+.each_more{ position:absolute; right:15px; top:-38px;}
+
+.list_jp{ padding-bottom:20px; overflow:hidden;}
+.list_jp li{ width:160px; height:60px; margin:24px 0 0 18px; float:left; overflow:hidden;}
+.list_jp li .pic{ width:60px; height:60px; position:relative; display:block; margin-right:10px; float:left;}
+.list_jp li .pic img{ width:60px; height:60px; border-radius:10%;}
+.list_jp li .app_name{ width:90px; height:30px; font:normal 14px/30px ''; margin-top:5px;}
+.list_jp li .app_name a{ color:#333;}
+.list_jp li .app_name a:hover{ text-decoration:underline;}
+.list_jp li p{ color:#aaa; font:normal 12px/20px Arial;}
+
+.c_tab{ height:39px;}
+.c_tab li{ width:131px; border-left:1px solid #f2f3f5; border-bottom:1px solid #f2f3f5; font:normal 14px/38px ''; text-align:center; float:left; cursor:pointer;}
+.c_tab li.on{ font-weight:bold;}
+.c_list{ border-left:1px solid #f2f3f5;}
+
+/* wy */
+.wy_tit{ height:39px;}
+.wy_tit li{ width:134px; border-left:1px solid #f2f3f5; border-bottom:1px solid #fff; font:normal 14px/38px ''; text-align:center; float:left; cursor:pointer;}
+.wy_tit li.on{ font-weight:bold;}
+.wy_con{ width:270px; overflow:hidden;}
+.wy_table{ width:100%;}
+.wy_table th,.wy_table td{ height:33px; border-bottom:1px solid #eee; font:normal 12px/33px '';word-break:keep-all;white-space:nowrap; text-align:left; color:#888; padding:0 10px;}
+.wy_table th{ background:#F7F7F4; border-top:1px solid #eee; color:#666}
+.wy_table td b{ width:30px; font-weight:normal; color:#f30; display:inline-block;}
+.wy_table td img{ margin:0 3px;}
+.wy_table td a,.wy_table01 td a:hover{ width:100px; color:#1B9EDD; overflow:hidden; text-overflow:ellipsis;white-space:nowrap; display:inline-block;}
+.pic_gap{ height:15px; background:#f2f3f5; display:block;}
+
+/* rom */
+.rom_list{ padding-bottom:15px; overflow:hidden;}
+.rom_list li{ width:215px; height:120px; margin:14px 0 0 14px; float:left; background:#F90;}
+.bible{ padding:5px 10px 15px 5px;}
+.bible a{ font:normal 12px/22px 'MicroSoft YaHei'; padding:0 9px; margin:10px 0 0 10px; display:inline-block;}
+.bible a.bible_more{ color:#fff;}
+.bible_more s{ width:10px; height:13px; background:url(../images/icon.png) -48px -85px no-repeat; display:inline-block; vertical-align:middle;}
+.jxbj{ background:#fff;}
+.rom_inf{ padding:25px 0 25px 25px}
+.rom_inf img{ width:145px; margin-right:15px; float:left;}
+.rom_inf h1{ font:normal 16px/30px 'MicroSoft YaHei';}
+.rom_inf table{ margin:20px 0}
+.rom_inf td{ font:normal 14px/28px ''; color:#999; padding-right:20px;}
+
+.rom_ico{ height:260px; float:left}
+.rom_score{ font:normal 12px/40px ''; color:#999}
+.rom_score b{ font:bold 30px/40px Arial; color:#F60}
+.rom_btn{ width:120px; height:32px; font:normal 18px/32px 'MicroSoft YaHei'; color:#fff; text-align:center; margin-top:12px; display:inline-block;}
+.rom_tab{ background:url(../images/bg_eee.png) repeat-x;}
+.rom_tit_list{ overflow:hidden}
+.rom_tit_list li{ font:normal 14px/40px Arial; border-top:1px solid #eee; border-right:1px solid #eee; color:#333; padding:0 20px; float:left; cursor:pointer}
+.rom_tit_list li.rom_lilink{ font-size:12px; border:none; float:right;}
+.rom_tit_list li.rom_lilink a,.rom_tit_list li.rom_lilink a:hover{ color:#4ac15c; text-decoration:underline;}
+.rom_pic{ margin:0 15px; height:350px; position:relative; overflow:hidden;}
+.rom_piclist{ height:350px; position:absolute; top:0; left:0; z-index:9}
+.rom_piclist li{ height:350px; margin-right:15px; float:left; overflow:hidden; cursor:default}
+.rom_piclist li img{ height:350px;}
+.rom_pic .gn_prev,.rom_pic .gn_next{ top:150px;}
+.rom_tabcon{ padding:15px 0; display:none}
+.rom_p_info{ font:normal 12px/20px ''; color:#999; padding:0 25px; overflow:hidden;}
+
+/* book */
+.cbook{}
+.cbook li{ float:left; margin:20px 3px 15px 15px;}
+.cbook li img{ width:120px; height:200px;}
+.cbook li p{ width:120px; height:30px; font:normal 14px/30px 'MicroSoft YaHei'; text-align:center; overflow:hidden; text-overflow:ellipsis;white-space:nowrap; padding-top:5px;}
+.cbook li p a{ color:#666;}
+/* zt */
+.cs_tit{ font:bold 14px/30px ''; padding:15px 10px 5px 10px;}
+.cs_tips{}
+.cs_tips a{ font:normal 14px/30px Arial; color:#666; margin:0 10px; display:inline-block;}
+.sybz_list{ overflow:hidden}
+.sybz_list li{ width:225px; height:166px; margin:15px 0 15px 15px; float:left}
+.sybz_list li img{ width:225px; height:166px;}
+
+/* jx */
+.pop_jx{ width:710px; height:460px; background:#fff; border:1px solid #ddd; display:none}
+.jx_tit{ height:40px; font:bold 14px/40px Arial; background:#eee; border-bottom:1px solid #fff; padding-left:20px}
+.jx_tit b{ width:40px; height:40px; background:url(../images/pop_close.png) no-repeat; display:inline-block; float:right; cursor:pointer}
+.jx_con{ border-top:1px solid #ddd; padding:10px 0 30px 30px; overflow:hidden}
+.jx_half{ width:310px; margin-right:30px; float:left}
+.half_tit{ font:bold 14px/40px Arial; color:#666}
+.half_box{ height:360px; background:#F7F7F7; border:1px solid #ddd; padding:10px 10px 0 10px; margin-top:10px; overflow-y:auto}
+.half_box table{ width:100%; background:#fff; border-collapse:collapse}
+.half_box td{ width:90px; height:50px; border:1px solid #ddd; text-align:center}
+.half_box ul{ margin-top:10px;}
+.half_box li{ width:90px; font:normal 12px/24px ''; float:left; overflow:hidden}
+.half_box li a{ color:#333;}
+.half_box dl{ font:normal 12px/22px ''; margin-top:5px; overflow:hidden}
+.half_box dt{ width:28px; text-align:center; float:left}
+.half_box dd{ width:240px; float:left}
+.half_box dd a{ color:#666; margin:0 8px; display:inline-block;}
+
+
+/* footer */
+.footer{ font:normal 12px/40px ''; color:#9F9F9F; background:#3E3E3E; margin-top:20px;}
+.f_link{ float:left;}
+.f_link a{ color:#fff; margin:0 10px;}
+.f_right{ color:#9F9F9F; text-align:center;}
+.f_right a{ color:#5CC76C;}
+.ftop{ border-top:2px solid #5CC76C; background:#fff; margin-top:20px; margin-bottom:-20px; overflow:hidden}
+.ft_left{ width:100%; }
+.ft_right{ width:125px; float:right;}
+.ft_tit{ height:40px; font:bold 14px/40px Arial; border-bottom:1px solid #ddd; color:#5CC76C;}
+.ft_a{ padding:10px 0;}
+.ft_a a{ font:normal 12px/24px ''; color:#666; margin-right:10px; display:inline-block}
+.ft_contact{ padding:10px 0;}
+.ft_contact a{ height:24px; font:normal 12px/24px ''; background:url(../images/icon.png) no-repeat; color:#999; padding-left:25px; display:block}
+.ft_contact a.ft_wx{ background-position:0 -600px}
+.ft_contact a.ft_xl{ background-position:0 -630px}
+.ft_contact a.ft_tx{ background-position:0 -660px}
+
+/* list */
+.tablist{ background:#fff; margin-top:15px;}
+.tab_tit{ height:39px; border-bottom:1px solid #f2f3f5; padding:0 15px;}
+.tab_tit h1{ font:bold 16px/39px 'MicroSoft YaHei'; float:left;}
+.tab_t{ margin-top:15px; float:right;}
+.tab_t li{ width:10px; height:10px;  border-radius:15px; display:inline-block; margin:0 5px;float:left; cursor:pointer;color:#333;}
+.tab_t li:hover{color:#4ac15c;}
+.tab_t2 li{ width:80px; height:20px; font-size: 14px; line-height: 20px; text-align: center;}
+.tab_t2 .current{ color: #4ac15c;}
+
+.tab_con{ height:130px; overflow:hidden; position:relative;}
+.tab_con .list_tj{position:absolute;left:0;top:0;width:9999px;height:130px;}
+.tab_con .list_tj li{ margin-left:6px;}
+
+.tab_content{}
+.tab_content .list_tj .ly-pic{height:100px;text-align:center;margin:0 10px;}
+.tab_content .list_tj li a{display:inline-block; }
+
+
+.sort,.hot_label{ padding:5px 5px 15px 5px}
+.sort a{ width:69px; height:28px; font:normal 14px/28px ''; color:#333; border:1px solid #eee; text-align:center; margin:10px 0 0 10px; display:inline-block;}
+.sort a.sort_on{ color:#fff;}
+
+.hot_label a{ font:normal 12px/22px Arial; padding:0 5px; margin:10px 0 0 10px; display:inline-block;}
+
+.order{ margin:10px 0; float:right;}
+.order a{ height:19px; font:normal 12px/19px ''; background:#F9F9F9; border:1px solid #ddd; color:#999; padding:0 5px; margin-left:10px; display:inline-block;}
+.order a s{ width:15px; height:20px; background:url(../images/icon.png) -46px -95px no-repeat; display:inline-block; vertical-align:middle;}
+
+.app_list{ padding-bottom:20px; overflow:hidden;}
+.app_list li{ width:210px; height:72px; margin:20px 0 0 18px; float:left; overflow:hidden;}
+.app_list li .pic{ width:72px; height:72px; position:relative; display:block; margin-right:10px; float:left;}
+.app_list li .pic img{ width:72px; height:72px; border-radius:10%;}
+.app_list li .app_name{ height:30px; font:normal 14px/30px '';}
+.app_list li .app_name a{ color:#333;}
+.tag_pad{ width:14px; height:14px; background:url(../images/icon.png) no-repeat; display:inline-block; margin-right:5px; vertical-align:middle;}
+.app_list li p{ font:normal 12px/21px ''; color:#999;}
+
+/* page */
+.page{ text-align:center; padding:15px 0; border-top:1px solid #f2f3f5;}
+.page a{ height:22px; font:normal 12px/22px Arial; color:#666; border:1px solid #ddd; padding:0 8px; margin:2px; display:inline-block;}
+.page a.page_on:hover{ color:#fff;}
+
+/*ph*/
+.boxlist{ width:1012px; margin:0 auto; overflow:hidden;}
+.ph_list{ width:233px; background:#fff; margin:15px 0 0 16px; float:left;}
+.ph_tit{ font:normal 14px/38px 'MicroSoft YaHei'; height:40px; border-bottom:1px solid #f2f3f5; padding:0 10px;}
+.ph_list .list_jp li{ width:215px; margin-top:20px;}
+.ph_list .list_jp li .app_name{ width:130px;}
+.ph_list .list_rank{ padding:0 10px;}
+.ph_no1{ height:100px; border-bottom:1px dotted #aaa; padding:15px 0; margin:0 10px;}
+.ph_no1 img{ width:60px; height:100px; margin:0 15px 0 5px; float:left;}
+.ph_no1 h3{ height:40px; font:normal 14px/20px 'MicroSoft YaHei'; margin:8px 0; overflow:hidden;}
+
+.ph_no1 p{ font:normal 12px/20px 'MicroSoft YaHei'; color:#999;}
+.bzph_list{ width:731px; background:#fff; margin:15px 0 0 16px; float:left;}
+.bz_img{ height:368px; padding:20px 0 0 20px; overflow:hidden;}
+.bz_img li{ margin:5px 0 0 5px;}
+.bz_a{ width:450px; height:337px; float:left;}
+.bz_a img{ width:450px; height:337px;}
+.bz_b{ width:225px; height:166px; float:left;}
+.bz_b img{ width:225px; height:166px;}
+
+/*search result*/
+.r_tab{ height:39px; border-bottom:1px solid #f2f3f5;}
+.r_tab a{ width:100px; border-right:1px solid #f2f3f5; font:normal 14px/38px ''; text-align:center; color:#666; float:left; cursor:pointer;}
+.r_tab a.on{ font-weight:bold;}
+.sear_list li{ height:72px; padding:20px; border-bottom:1px solid #F2F3F5; position:relative;}
+.sear_list li img{ width:72px; height:72px; margin-right:20px; float:left; display:block;}
+.sear_list li .app_name{ height:30px; font:normal 14px/30px 'MicroSoft YaHei';}
+.sear_list li .app_name a{ color:#333;}
+.sear_list li p{ font:normal 12px/21px ''; color:#aaa;}
+.lx_tips{ padding:5px 0 15px 2px;}
+.lx_tips a{ width:72px; height:30px; font:normal 14px/30px ''; color:#333; border:1px solid #eee; display:inline-block; text-align:center; margin:10px 0 0 10px}
+.zt_list .cbook{ padding-bottom:20px; overflow:hidden;}
+.zt_list .cbook li{ margin:15px 3px 0 15px}
+
+.tli_box{ padding:25px 20px; overflow:hidden; position:relative;}
+.tli_img{ width:240px; height:110px; padding-right:20px; float:left; position:relative;}
+.tli_img img{ width:240px;}
+.tli_apps{ width:600px; height:103px; position:absolute; top:30px; left:340px; overflow:hidden;}
+.tli_bg{ width:240px; height:30px; background:#000; filter:alpha(opacity=30); -moz-opacity:0.3;-khtml-opacity:0.3;opacity:0.3; position:absolute; bottom:0; left:0;}
+.tli_word{ width:230px; height:30px; position:absolute; left:5px; bottom:0; overflow:hidden;}
+.tli_word a{ font:normal 14px/30px 'MicroSoft YaHei'; color:#fff;}
+.tli_word em{ font:normal 11px/30px Verdana; color:#fff; float:right; padding-left:10px;}
+.tli_prev,.tli_next,.tli_prevon,.tli_nexton{ width:13px; height:25px; background:url(../images/arrow.png) no-repeat; position:absolute; top:60px;}
+.tli_prev{ background-position:0 0; left:300px;}
+.tli_next{ background-position:-20px 0; right:20px;}
+.tli_prevon{ background-position:0 -30px; left:300px; cursor:pointer;}
+.tli_nexton{ background-position:-20px -30px; right:20px; cursor:pointer;}
+.tli_slide{ height:103px; position:absolute; top:0; left:0; overflow:hidden;}
+.tli_slide li{ width:75px; padding-top:5px; margin-right:25px; text-align:center; float:left;}
+.tli_slide li img{ width:72px; height:72px; border-radius:10px;}
+.tli_slide li p{ height:20px; margin-top:3px; overflow:hidden;}
+.tli_slide li p a{ font:normal 12px/20px 'MicroSoft YaHei'; color:#666;}
+.zt_info{ border-bottom:1px solid #F2F3F5; padding:20px; overflow:hidden;}
+.zt_info img{ width:240px; height:110px; margin-right:15px; float:left;}
+.zt_info h1{ font:normal 16px/30px 'MicroSoft YaHei'; color:#333;}
+.zt_info p{ font:normal 12px/22px 'MicroSoft YaHei'; color:#999; padding-top:5px;}
+.btn_app{ width:60px; height:25px; font:normal 14px/25px ''; text-align:center; color:#fff; position:absolute; right:20px; top:45px;}
+.zt_hot{ padding:4px 0;}
+.zt_hot li{ padding:8px 12px 0 12px;}
+.zt_hot li img{ width:240px; height:110px;}
+.zt_hot li p{ font:normal 12px/30px '';}
+.zt_hot li p a{ color:#666;}
+.jx_list{ font:normal 12px/26px ''; padding:12px;}
+.jx_list a{ color:#333; margin:0 8px; display:inline-block;}
+/*bz*/
+.bz_list{ padding:2px 0 10px 2px; overflow:hidden;}
+.bz_list li{ width:225px; height:166px; margin:5px 0 0 5px; float:left;}
+.bz_list li img{ width:225px; height:166px;}
+.bz_list li a:hover{ opacity:0.9;}
+/*rom*/
+.rom_menu{ width:979px; height:50px; background:#FAFAFC; border:1px solid #ddd; margin:0 auto; margin-top:15px;}
+.rom_menu li{ width:88px; font:normal 14px/50px 'MicroSoft YaHei'; border-right:1px solid #ddd; text-align:center; float:left;}
+.rom_menu li a{ color:#666; display:block}
+.rom_focus{width:700px;height:250px;position:relative;}
+.f700x250{width:700px;height:250px;overflow:hidden}
+.f700x250 img{width:700px;height:250px}
+.r_article{ padding:15px; overflow:hidden;}
+.r_pic{ width:220px;}
+.r_word{ width:420px}
+.r_word .news_list{ border:none; padding:0;}
+.r_word .news_list li{ padding:5px 0;}
+.rp_img{ margin:10px 0 0 10px; position:relative;}
+.rp_img img{ width:220px; height:120px;}
+.rp_img p{ width:200px; height:30px; font:normal 12px/30px ''; background:#000; opacity:0.8; position:absolute; bottom:0; left:0; padding:0 10px;}
+.rp_img p a{ color:#fff;}
+.rom_jx{ background:#fff; overflow:hidden}
+.jx_pic{ width:80px; height:80px; padding:10px 0; float:left;}
+.jx_pic img{ width:80px; height:80px;}
+.jx_info{ width:160px; padding:10px; float:left;}
+.jx_info h3{ height:40px; font:normal 14px/20px 'MicroSoft YaHei'; color:#333; overflow:hidden; padding:3px 0;}
+.jx_info p{ font:normal 12px/20px ''; color:#999;}
+.jx_info p a{ color:#666;}
+.jx_info p a:hover{ text-decoration:underline;}
+
+.rom_ads{ background:#fff; padding:0 13px 15px 13px; margin-top:15px;}
+.r_tit{ height:40px; font:bold 16px/40px 'MicroSoft YaHei';}
+.rom_ads img{}
+.rom_rank{ background:#fff; margin-top:15px;}
+.rom_rank .ph_no1 img{ width:100px; height:100px;}
+.rom_dl{ font:normal 12px/25px ''; border-bottom:1px solid #F2F3F5; padding:10px 15px; overflow:hidden;}
+.rom_dl dt{ width:90px; text-align:right; float:left}
+.rom_dl dd{ width:580px; float:left}
+.rom_dl dd a{ color:#999; padding:0 5px; margin:0 10px; display:inline-block;}
+.rom_wz{ background:#fff; margin-top:15px;}
+.rom_wz ul{ padding:0 15px}
+.rom_wz li{ height:40px; font:normal 14px/40px ''; border-bottom:1px dotted #ddd; overflow:hidden}
+.rom_wz li a{ color:#666;}
+.rzy_list{}
+.rzy_list li{ padding:15px 115px 15px 15px; overflow:hidden; position:relative}
+.rzy_list li img{ width:55px; margin:0 15px 0 5px; float:left;}
+.rzy_list li h1{ font:normal 14px/30px '';}
+.rzy_list li h1 a{ color:#333;}
+.rzy_list li td{ font:normal 12px/20px ''; color:#aaa; padding-right:20px;}
+.rzy_list li td a{ margin-right:10px;}
+.rzy_btn{ position:absolute; top:15px; right:15px;}
+.rzy_btn p{ height:35px; font:normal 12px/35px 'MicroSoft YaHei'; color:#999; text-align:right;}
+.rzy_btn p b{ font:normal 30px/35px Arial; color:#F60;}
+.rzy_btn a{ width:85px; height:25px; font:normal 14px/25px 'MicroSoft YaHei'; color:#fff; text-align:center; margin-top:5px; display:inline-block;}
+
+.rom_sq{ padding:15px;}
+.rom_sq p{ font:normal 14px/30px 'MicroSoft YaHei'; color:#888; padding-bottom:10px;}
+.rom_sq select{ height:26px; border:1px solid #ccc; padding:1px; margin-right:10px;}
+.sq_btn{ width:80px; height:26px; font:normal 14px/26px 'MicroSoft YaHei'; color:#fff; text-align:center; display:inline-block;}
+.rom_tab .r_tab{ border-top:1px solid #F2F3F5; margin-top:5px;}
+.rom_tab .r_tab a{ width:150px;}
+
+.sq_list{ padding-bottom:25px; overflow:hidden;}
+.sq_list li{ width:220px; padding:20px 13px 0 0; float:left}
+.sq_list li img{ width:100px; height:100px; float:left;}
+.sq_list li h3{ height:40px; font:normal 14px/20px ''; padding-top:4px; overflow:hidden;}
+.sq_list li h3 a{ color:#333;}
+.sq_list li p{ font:normal 12px/20px 'MicroSoft YaHei'; color:#aaa; padding:4px 0;}
+.sq_list li .btn{ font:normal 12px/20px 'MicroSoft YaHei'; display:inline-block; color:#fff; padding:0 6px;}
+.tj_app{}
+.tj_app ul{ padding:0 15px;}
+.tj_app li{ padding:15px 0; border-bottom:1px dotted #ddd;}
+.tj_app li img{ width:50px; height:50px; margin-right:15px; float:left;}
+.tj_app li .app_name{ font:normal 14px/28px '';}
+.tj_app li .app_name a{ color:#333;}
+.tj_app li p{ font:normal 12px/22px 'MicroSoft YaHei'; color:#aaa;}
+.hot_s{ padding:15px;}
+.hot_s a{ font:normal 13px/25px 'MicroSoft YaHei'; color:#666; margin:0 8px; display:inline-block;}
+.hot_s a:hover{ text-decoration:underline;}
+
+/*info*/
+.app{ padding:25px 0 25px 25px; position:relative}
+.app img{ width:100px; height:100px; border-radius:10px; margin-right:15px; float:left;}
+.app h1{ font:normal 16px/25px 'MicroSoft YaHei'; color:#333; margin-top:3px;}
+.app p{ height:20px; font:normal 12px/20px 'MicroSoft YaHei'; color:#aaa; margin-top:14px; overflow:hidden;}
+.app p em{ font-style:normal; color:#666; margin-right:20px;}
+.app p b{ height:20px; font:normal 12px/20px ''; background:#EBEBEB; display:inline-block; padding:0 6px; margin-right:10px;}
+.app p b a{ color:#999;}
+.app_btn{ height:32px; border-top:1px dotted #aaa; padding:20px 0; margin-top:25px;}
+.app_btn li{ width:140px; height:32px; float:left; position:relative}
+.phone_box{ width:320px; height:200px; background:#fff; padding:0 20px; position:absolute; top:32px; left:0; display:none; z-index:99}
+.btn_phone,.btn_velocity,.btn_normal{ width:120px; height:30px; font:normal 14px/30px 'MicroSoft YaHei'; text-align:center; display:inline-block;}
+.btn_normal{ border:1px solid #ddd; color:#888;}
+.btn_phone{ background:#4AC15C; border:1px solid #51AF5F; color:#fff;}
+.btn_velocity{ background:#f60; border:1px solid #DD5800; color:#fff;}
+.btn_phone i,.btn_velocity i{ width:24px; height:30px; background:url(../images/icon.png) no-repeat; display:inline-block; vertical-align:middle}
+.btn_phone i{ background-position:0 -457px;}
+.btn_velocity i{ background-position:0 -490px;}
+
+.app_hang{ width:30px; height:300px; position:absolute; left:-30px; top:0;}
+.hang_1,.hang_2,.hang_3{ width:20px; color:#fff; border-radius:5px 0 0 5px; text-align:center; font-size:14px; line-height:16px; display:inline-block; padding:10px 5px; margin-bottom:5px;}
+.hang_2{ background:#F90}
+.hang_1:hover,.hang_2:hover,.hang_3:hover{ opacity:0.9}
+.phone_box h2{ font:normal 16px/48px 'MicroSoft YaHei'; color:#333}
+.ph_con{ padding-left:16px;}
+.ph_con b{ font:normal 12px/24px 'MicroSoft YaHei'; color:#777;}
+.ph_con span{ font:normal 12px/30px ''; color:#777; padding:0 10px;}
+.msg_txt{ width:100px; height:20px; font:normal 12px/20px 'MicroSoft YaHei'; border:1px solid #ddd; color:#555; padding:4px 6px; float:left}
+.msg_btn{ width:60px; height:30px; font:normal 12px/30px 'MicroSoft YaHei'; color:#fff; float:left; cursor:pointer}
+.cb_01{ font:normal 12px/30px ''; padding:155px 0 0 45px; float:left;}
+.cb_02{ font:normal 12px/20px ''; padding:110px 0 0 35px; float:left;}
+.cb_03{ padding:55px 0 0 45px; float:left;}
+.cb_01 a,.cb_02 a{ text-decoration:underline; color:#09F;}
+.app_info{ border:1px solid #F2F3F5; padding-bottom:15px;}
+.app_info h2{ font:bold 14px/45px 'MicroSoft YaHei'; color:#333; border-top:1px solid #4AC15C; display:inline-block; padding:0 25px; margin-top:-1px;}
+.app_info p{ font:normal 12px/20px ''; color:#666; padding:0 25px;}
+.p_info{ height:100px; font:normal 14px/20px ''; color:#666; padding:0 25px; overflow:hidden;}
+.p_info a{ color:#666; border-bottom:1px dotted #666;}
+.infopic{ margin:0 15px; height:300px; position:relative; overflow:hidden;}
+.picbox{}
+.piclist{ width:1200px; height:300px; position:absolute; top:0; left:0; z-index:9}
+.piclist li{ height:300px; margin-right:15px; float:left; overflow:hidden;}
+.piclist li img{ height:300px;}
+
+.gn_prev,.gn_next{ width:50px; height:50px; position:absolute; top:120px; cursor:pointer; z-index:98}
+.gn_prev{ background:url(../images/prev.png) no-repeat; left:0;}
+.gn_next{ background:url(../images/next.png) no-repeat; right:0;}
+
+.p_more{ margin:5px 25px; text-align:right;}
+.p_more a{ font:normal 12px/20px '';}
+.wz_list{ padding:5px 25px;}
+.wz_list li{ height:30px; font:normal 12px/24px '';}
+.wz_list li em a:hover{ color:#fff}
+.wz_tit{ width:500px; height:24px; color:#666; float:left; text-overflow:ellipsis; white-space:nowrap; overflow:hidden}
+.wz_tit:hover{ color:#fff;}
+.wz_list li em{ height:20px; background:#4ac15c; padding:0 5px; margin:2px 8px 2px 0; float:left}
+.wz_list li em a{ font:normal 12px/20px ''; color:#fff;}
+.wz_list li b{ font-weight:normal; color:#999; float:right}
+.zx_link{ float:right}
+.zx_link a{ font:normal 12px/45px ''; margin-right:25px; display:inline-block;}
+
+.wz_list_double{ padding:5px 25px; overflow:hidden}
+.wz_list_double li{ width:338px; height:30px; font:normal 12px/24px ''; float:left}
+.wz_list_double li em{ height:20px; background:#4ac15c; padding:0 5px; margin:2px 8px 2px 0; float:left}
+.wz_list_double li em a{ font:normal 12px/20px ''; color:#fff;}
+.wz_list_double li em a:hover{ color:#fff}
+.wz_list_double li a.wz_tit{ width:260px;}
+.wz_list_double li a:hover{ color:#333}
+
+.app_pl{ overflow:hidden}
+.pl_text{ width:620px; height:50px; border:1px solid #ddd; padding:10px; margin:5px 25px; resize:none}
+.pl_btn{ width:80px; height:30px; margin:8px 32px 15px 0; float:right; cursor:pointer}
+.pl_list{ padding:0 25px;}
+.pl_list li{ border-top:1px dotted #aaa; padding:10px 0;}
+.pl_list p{ font:normal 14px/22px 'MicroSoft YaHei'; color:#666; padding:0;}
+.pl_list p span{ font:normal 12px/30px 'MicroSoft YaHei'; color:#999; margin-right:15px;}
+.cmt_more{ border-top:1px dotted #aaa; padding-top:15px; margin:5px 25px;}
+.cmt_more a{ width:120px; height:35px; background:#E7E7E7; font:normal 14px/35px 'MicroSoft YaHei'; color:#666; text-align:center; display:inline-block;}
+.cmt_more a:hover{ background:#e1e1e1;}
+
+.app_leftinfo{ width:490px; margin-right:5px; float:left;}
+.app_rightcode{ width:180px; float:left; position:relative}
+
+.rcode_box{ width:140px; border:1px solid #eee; background:#F2F3F5; position:absolute; top:-32px; left:7px; padding:10px;}
+.rcode_tri{ width:7px; height:7px; background:url(../images/code_tri.png) no-repeat; position:absolute; top:-33px; left:0;}
+.rcode_box h2{ font:normal 14px/20px 'MicroSoft YaHei'; color:#444; text-align:center;}
+.rcode_140 img{ width:140px; height:140px; margin:5px 0; float:none;}
+.rcode_box a{ font:normal 12px/20px ''; text-decoration:underline; color:#999; text-align:right; display:block}
+
+/*wz*/
+.wz_box{ padding:20px 30px;}
+.wz_box h1{ font:bold 18px/40px 'MicroSoft YaHei'; text-align:center;}
+.wz_inf{ text-align:center;}
+.wz_inf b,.wz_inf a{ font:normal 12px/30px ''; margin:0 10px;}
+.wz_inf a{ color:#666;}
+.wz_inf a:hover{ text-decoration:underline}
+.wz_down{ background:#f0f0f0; border:1px solid #ddd; padding:15px; margin:10px 0; overflow:hidden}
+.wz_downinf{ width:500px; float:left;}
+.wz_downinf h1{ font:normal 16px/30px ''; text-align:left}
+.wz_downinf p{ width:365px; height:20px; font:normal 12px/20px 'MicroSoft YaHei'; color:#aaa; margin-top:5px; overflow:hidden;}
+.wz_downinf p em{ font-style:normal; color:#666; margin-right:20px;}
+.wz_downinf p b{ height:20px; font:normal 12px/20px ''; margin-right:10px; display:inline-block}
+.di_left{ float:left}
+.di_right{ padding-top:25px; float:right}
+.wz_con{ font:normal 14px/2 '';}
+.wz_con img{ max-width:668px;}
+.tj_app .list_rank li{ padding:0;}
+.btn_new{ text-decoration:underline; float:right}
+
+/*bq*/
+.sub_js{ font:normal 12px/24px ''; color:#666; padding:5px 15px;}
+
+/*game_gl*/
+.game_focus{ width:982px; height:361px; border-collapse:collapse; margin:0 auto; margin-top:12px;}
+.game_focus td{ border:1px solid #f2f3f5;}
+.game_tj{ background:#fff; border:1px solid #ddd; margin-top:15px; overflow:hidden}
+.gtj_tit{ width:100px; float:left}
+.gtj_tit li{ height:49px; font:normal 14px/49px 'MicroSoft YaHei'; border:1px solid #ddd; margin:-1px 0 0 -1px; text-align:center; cursor:pointer}
+.gtj_tit li.active{ color:#4AC15C; border-right:1px solid #fff;}
+.gjt_con{ width:824px; height:99px; border-bottom:1px solid #ddd; padding:0 26px; float:left;}
+.gjt_con ul{}
+.gjt_con li{ width:85px; text-align:center; margin:0 9px; float:left}
+.gc_img{ height:50px; margin-top:12px;}
+.gc_img img{ width:50px; height:50px;}
+.gjt_con li p{ height:30px; overflow:hidden; text-overflow:ellipsis;white-space:nowrap;}
+.gjt_con li p a{ font:normal 12px/30px 'MicroSoft YaHei'; color:#333;}
+.gtj_btm{ height:50px;}
+.gb_tit{ width:90px; font:normal 14px/50px 'MicroSoft YaHei'; color:#FF5F1E; text-align:center; float:left;}
+.gb_con{ width:850px; height:50px; font:normal 12px/50px ''; color:#aaa; padding:0 15px 0 23px; float:left; overflow:hidden;}
+.gb_con a{ color:#333; margin:0 12px;}
+.game_ht .headline{ padding:15px 0; margin:0 15px;}
+.game_ht .news_list{ padding-bottom:12px; overflow:hidden}
+.game_ht .news_list li{ width:320px; margin:2px 15px 3px 0; float:left}
+.game_ht .news_list li a{ font:normal 14px/28px '';}
+.game_ht .news_list li em{ height:28px; display:initial;}
+.game_ht .head_w p{ font:normal 14px/24px '';}
+
+.game_lb{ color:#666;}
+.glb{ height:50px; border-bottom:1px dotted #aaa; padding:14px 0; margin:0 15px}
+.glb img{ width:50px; height:50px; margin-right:15px; float:left;}
+.glb .app_name{ font:normal 12px/25px 'MicroSoft YaHei';}
+.glb p a{ font:normal 12px/25px ''; color:#FF5F1E;}
+.glb p a:hover{ text-decoration:underline;}
+.game_lb ul{ padding:7px 0;}
+.game_lb li{ font:normal 12px/22px 'MicroSoft YaHei'; padding:3px 15px;}
+.glb_btn{ width:55px; height:20px; background:#f7f7f7; border:1px solid #ddd; color:#666; font:normal 12px/22px ''; text-align:center; float:right;}
+.game_pc{ background:url(../images/bg_game_pc.png) right repeat-y; overflow:hidden}
+.gpc_left{ width:490px; float:left}
+.gpc_right{ width:180px; padding:15px; float:right; position:relative}
+.gpc_bg{ width:150px; height:44px; background:url(../images/bg_gpc.png) repeat-x; padding:50px 15px 10px 15px; position:absolute; bottom:15px; left:15px}
+.gpc_bg p{ height:44px; font:normal 14px/22px ''; overflow:hidden}
+.gpc_bg p a{ color:#fff;}
+.gpc_bg p a:hover{ text-decoration:underline;}
+.gp_con{ width:328px; padding:15px 0 0 15px; float:left}
+.gp_top{ position:relative}
+.gp_top img{ width:328px; height:100px;}
+.gp_top p{ width:328px; height:35px; background:url(../images/bg_popular.png) repeat-x; text-align:center; position:absolute; left:0; bottom:0;}
+.gp_top p a{ font:normal 14px/35px ''; color:#fff;}
+.gp_con .news_list{ margin:0; border:none;}
+.gp_con .news_list li{ width:328px; margin:2px 15px 3px 0}
+.gp_con .news_list li a{ font:normal 14px/28px '';}
+.gp_con .news_list li em{ height:28px; display:initial;}
+.gp_btn{ padding:10px 0;}
+.gp_zone,.gp_gift{ width:67px; height:28px; font:normal 14px/28px ''; background:url(../images/icon.png) no-repeat #f7f7f7; border:1px solid #ddd; padding-left:33px; display:inline-block}
+.gp_zone{ background-position:10px -531px; color:#4AC15C; margin:0 15px 0 55px;}
+.gp_gift{ background-position:10px -562px; color:#f33;}
+.gp_zone:hover{ border:1px solid #4AC15C;}
+.gp_gift:hover{ border:1px solid #f33;}
+.game_wy .wy_con{ width:245px; margin:10px 10px 0 10px;}
+.game_wy .wy_tit{ border-bottom:1px solid #f1f1f1;}
+.game_wy .wy_tit li{ width:131px;}
+.game_wy .wy_table th,.game_wy .wy_table td{ height:35px; line-height:35px;}
+.game_ngc{ padding-bottom:12px; overflow:hidden}
+.game_ngc li{ width:72px; height:84px; text-align:center; margin:12px 0 0 12px; float:left; overflow:hidden}
+.game_ngc li img{ width:60px; height:60px;}
+.game_ngc li p{ font:normal 12px/24px '';}
+.game_ngc li p a{ color:#666;}
+.game_pic{ padding:12px 18px;}
+.game_pic table{ border-collapse:collapse;}
+.game_pic td{ border:2px solid #fff;}
+.game_video{ padding:11px 15px 4px 15px;}
+.game_video li{ margin-top:4px;}
+.game_video li p{ height:35px; font:normal 14px/35px Arial;}
+.game_video li p a{ color:#333;}
+.gv_pic{ position:relative;}
+.gv_pic img{ width:235px; height:130px;}
+.gv_btn{ width:60px; height:60px; background:url(../images/btn_video.png) no-repeat; position:absolute; top:35px; left:87px;}
+.game_ad{ width:980px; margin:15px auto 0 auto;}
+.ad_728{ background:#f2f3f5; padding-bottom:15px;}
+
+/*article_list*/
+.ar_list li{ border-bottom:1px solid #eee; padding:12px 20px;}
+.ar_list li h2{ font:normal 14px/25px '';}
+.ar_list li h2 a{ color:#555;}
+.ar_list li h2 a:hover{ text-decoration:underline;}
+.ar_list li b{ font:normal 12px/25px ''; color:#aaa; margin-right:20px;}
+
+.cmt_cy{ margin:0 25px;}
+.pc_btn,.pc_game_btn{ width:180px; height:120px; float:right;}
+.pc_btn a,.pc_game_btn a{ width:120px; height:40px; background:#4ac15c; font:normal 16px/40px 'MicroSoft YaHei'; color:#fff; text-align:center; margin:30px 0 0 10px; display:inline-block}
+.pc_btn a:hover,.pc_game_btn a:hover{ opacity:0.9}
+.pc_game_btn a{ margin-top:0; display:block}
+.pc_game_btn a.pc_game_apk{ background:#F93; margin-top:15px}
+
+.app_h1{ height:30px; font:bold 14px/30px 'MicroSoft YaHei'; color:#444; overflow:hidden; text-overflow:ellipsis;white-space:nowrap;}
+.app_h1 a{ color:#444;}
+.app_h2{ width:90px; height:30px; font:normal 14px/30px ''; margin-top:5px; overflow:hidden; text-overflow:ellipsis;white-space:nowrap; float:left}
+.app_h2 a{ color:#333;}
+.app_h2 a:hover{ text-decoration:underline;}
+.app_name{ font:normal 14px/30px ''; overflow:hidden; text-overflow:ellipsis;white-space:nowrap;}
+.app_name a{ color:#333;}
+.app_name a:hover{ text-decoration:underline;}
+
+/*sy*/
+.sy_logo{ width:183px; height:50px; float:left;}
+.sy_menu{ height:45px;}
+.sy_min{ width:980px; height:45px; margin:0 auto;}
+.sy_min li{ height:45px; font:normal 16px/45px ''; border-right:1px solid #525252; float:left}
+.sy_min li a{ color:#fff; padding:0 37px; display:block;}
+.min_on{ background:#4AC15C;}
+.sy_main{ width:680px; float:left;}
+.sy_sub{ width:280px; margin-top:15px; float:right}
+.sy_artlist{ background:#fff; margin-top:15px}
+.syar_list li{ border-bottom:1px solid #eee; padding:12px 20px;}
+.syar_list li h2,.syvd_list li h2{ font:bold 16px/25px ''; margin-bottom:5px;}
+.syar_list li h2 a,.syvd_list li h2 a{ color:#333;}
+.syar_list li h2 a:hover,.syvd_list li a:hover{ text-decoration:underline;}
+.syar_list li p,.syvd_list li p{ font:normal 12px/25px ''; height:25px; color:#999; overflow:hidden; text-overflow:ellipsis;white-space:nowrap}
+.syar_list li b,.syvd_list li b{ font-weight:normal; margin-right:20px;}
+.sy_box{ background:#fff}
+.syvd_list{}
+.syvd_list li{ height:100px; padding:15px; border-top:1px solid #eee;}
+.sv_pic{ position:relative; float:left; margin-right:15px}
+.sv_pic img{ width:192px; height:100px;}
+.sv_btn{ width:60px; height:60px; background:url(../images/btn_video_min.png) no-repeat; position:absolute; top:25px; left:70px;}
+.syvd_list li h2{ margin-top:12px}
+.sytp_list{ overflow:hidden; min-height:700px;}
+.sytp_list li{ padding:24px 0 0 24px; float:left}
+.sytp_list li img{ width:140px;}
+.game_filter{ background:#fff; margin:15px 0}
+.game_filter dl{ border-bottom:1px solid #eee; overflow:hidden}
+.game_filter dt{ width:50px; font:normal 12px/42px ''; color:#666; padding-left:20px; float:left}
+.game_filter dd{ width:910px; font:normal 12px/22px ''; padding:10px 0; float:left}
+.game_filter dd a{ color:#666; display:inline-block; padding:0 5px; margin:0 6px}
+.game_filter dd a:hover{ color:#4AC15C;}
+.game_filter dd a.game_on{ background:#4AC15C; color:#fff}
+.game_library{ overflow:hidden; margin-left:-16px}
+.game_library li{ width:233px; background:#fff; text-align:center; padding:15px 0; margin:0 0 16px 16px; float:left}
+.game_library h3{ font:normal 18px/30px ''}
+.game_library h3 a{ color:#333}
+.game_library p{ font:normal 12px/20px ''; color:#999;}
+.game_library p i{ font-style:normal; margin:0 20px;}
+.game_library p a{ color:#999}
+.game_library img{ width:120px; height:120px; margin:10px 0}
+.glib_btn{}
+.glib_btn a{ width:80px; height:30px; background:#29A8E4; font:normal 14px/30px ''; color:#fff; display:inline-block; margin:0 10px}
+.glib_btn a:hover{ background:#1C9EDD;}
+/*zone*/
+.game_zone{ background:#fff;}
+.gmenu_list{ width:980px; margin:0 auto;}
+.g_menu ul{ float:left}
+.g_menu{ height:50px; background:#414752;}
+.g_menu li{ margin-right:1px; float:left; position:relative}
+.g_menu li a{ font:normal 18px/50px 'MicroSoft YaHei'; color:#fff; padding:0 25px; display:block}
+.g_menu li.menu_on a,.g_menu li.menuon a,.g_menu li a:hover{ background:#333;}
+.g_menu li .subnav{ width:315px; background:#333; padding:8px; position:absolute; z-index:300; display:none}
+.g_menu li .subnav a{ width:95px; font:normal 12px/16px 'MicroSoft YaHei'; color:#d7d7d7; display:block; float:left; padding:4px 0 4px 10px;}
+.g_menu li .subnav a:hover{ color:#fff; text-decoration:underline;}
+.menu_search{ width:200px; height:30px; margin:10px 0; float:right}
+.g_box{ width:980px; margin:15px auto 0 auto}
+.gz_half{ width:480px;}
+.gz_down{ border:2px solid #5CAAE6;}
+.gd_tit{ height:40px; background:#5CAAE6; color:#fff; font:normal 14px/41px ''; padding:0 10px}
+.gd_con{ padding:15px 15px 5px 15px; position:relative}
+.gdc_info{ width:306px;}
+.gdc_btn{ width:120px;}
+.gdc_version{ position:absolute; top:10px; left:-30px}
+.game_topinfo{ overflow:hidden}
+.game_topinfo img{ width:80px; height:80px; margin:0 15px 8px 0; float:left}
+.gdc_info p{ height:20px; font:normal 12px/20px ''; color:#999; margin-top:5px}
+.gdc_info p em{ font-style:normal; color:#444}
+.gdc_info p b{ height:20px; background:#ebebeb; display:inline-block; font:normal 12px/20px ''; margin-right:10px; padding:0 6px;}
+.gdc_info p b a{ color:#666}
+.g_dp{ height:40px; font:normal 12px/20px 'MicroSoft YaHei'; color:#666; margin-top:10px;}
+.xq_show{ color:#f60; position:relative; display:inline-block}
+.g_xq{ width:280px; background:#fff; border:3px solid #e2e2e2; color:#666; padding:8px 12px; position:absolute; top:20px; left:0; display:none; z-index:99}
+.gdc_btn .app_btn{ height:auto; border:none; padding:0; margin-top:0;}
+.gdc_btn .app_btn li{ width:120px; margin-bottom:10px;}
+.gz_ewm,.gz_lb{ width:55px; height:32px; background:url(../images/icon.png) 20px -695px no-repeat #eee; display:inline-block}
+.gz_lb{ background-position:20px -725px;}
+.gz_ewm{ position:relative}
+.gz_ewm em{ position:absolute; bottom:0; left:-1px; display:none}
+.gz_ewm em img{ width:120px; height:120px; border:2px solid #eee;}
+.gz_headline{ border-bottom:1px solid #ddd; padding-bottom:10px}
+.gz_headline h3{ height:40px; font:normal 20px/40px 'MicroSoft YaHei'; text-align:center; overflow:hidden}
+.gz_headline h3 a{ color:#F6505C}
+.gz_headline p{ font:normal 14px/20px 'MicroSoft YaHei'; color:#666; margin:5px 0}
+.template_list1{ padding-top:5px;}
+.template_list1 li{float:left;overflow:hidden;height:23px;line-height:23px;position:relative; margin-top:5px;}
+.template_list1 li a{font-size:14px;margin-right:12px;color:#666;}
+.template_list1 li a:hover{ text-decoration:underline}
+.template_list1 li a.a_sort{ color:#F6505C}
+.gz_tit{ height:40px; font:normal 20px/40px 'MicroSoft YaHei'; border-bottom:2px solid #ddd; margin-bottom:12px;}
+.gz_tit b{ border-bottom:2px solid #5CAAE6; color:#333; padding:0 8px; display:inline-block}
+.gz_tit a{ font:normal 12px/45px '宋体'; color:#5CAAE6; margin:0 2px; float:right}
+.template_list2{}
+.template_list2 li{ height:28px; font:normal 14px/28px ''; background:url(../images/icon.png) 5px -760px no-repeat; padding-left:15px; overflow:hidden}
+.template_list2 li a{ color:#666}
+.template_list2 li a:hover{ text-decoration:underline}
+.template_list2 li em{ font:normal 12px/28px ''; color:#aaa; padding-left:12px; float:right}
+.template_lipic{ padding-bottom:9px;}
+.template_lipic img{ height:75px; margin:0 12px 0 5px; float:left}
+.template_lipic h3{ height:30px; font:normal 14px/30px ''; overflow:hidden}
+.template_lipic h3 a{ color:#666;}
+.template_lipic p{ height:46px; font:normal 12px/23px 'MicroSoft YaHei'; color:#999; overflow:hidden}
+.gz_main{ width:695px; float:left}
+.gz_sub{ width:265px; float:right}
+.gz_con{ margin-bottom:15px}
+.strategy_tab{ overflow:hidden}
+.strategy_tab li{ height:30px; background:#ddd; font:normal 12px/30px ''; color:#666; padding:0 12px; margin-right:1px; float:left; cursor:pointer}
+.strategy_tab li.stab_on{ background:#5CAAE6; color:#fff}
+.strategy_c{ margin:10px 0 0 -15px; overflow:hidden}
+.strategy_c li{ width:340px; height:28px; font:normal 14px/28px 'MicroSoft YaHei'; margin-left:15px; float:left}
+.strategy_c li a{ color:#666}
+.strategy_c li a:hover{ text-decoration:underline}
+.str_pic{ overflow:hidden}
+.str_pic li{ float:left; margin:8px 19px}
+.str_pic li img{ width:100px;}
+.str_video{ margin-left:-15px; overflow:hidden}
+.str_video li{ width:220px; margin-left:15px; float:left}
+.str_video li img{ width:220px;}
+.str_video li p{ height:20px; background:url(../images/icon.png) 0 -795px no-repeat; font:normal 14px/20px ''; padding-left:26px; margin:10px 0; overflow:hidden}
+.str_video li p a{ color:#666}
+.str_video li p a:hover{ text-decoration:underline}
+.gz_con .infopic{ margin:0}
+.gz_table{ width:100%}
+.gz_table th{ height:30px; font:normal 12px/30px ''; color:#666; background:#f2f2f2}
+.gz_table td{ font:normal 14px/16px 'MicroSoft YaHei'; color:#999; padding-top:12px}
+.gz_table td.cf12{ font-size:12px; text-align:center}
+.gz_table td a{ color:#333}
+.gz_clb{}
+.gz_clb li{ font:normal 14px/24px 'MicroSoft YaHei'; margin-bottom:5px;}
+.gz_clb li a{ width:50px; height:25px; font-size:12px; background:#FFF2F2; color:#f6505c; text-align:center; float:right}
+.gz_con .game_ngc{ color:#666; text-decoration:underline}
+.gz_con .hot_s{ padding:0 5px}
+/*jubao*/
+.jubao{ padding:15px; text-align:center}
+.jubao p{ font:normal 12px/20px ''; color:#999;}
+.jubao_btn{ width:150px; height:35px; font:normal 14px/35px 'MicroSoft YaHei'; background:url(../images/icon.png) no-repeat 40px -830px #58B54B; color:#fff; display:inline-block; padding-left:30px; margin-top:10px}
+.jubao_btn:hover{ background-color:#4DB03F;}
+
+.gz_con .syar_list li{ padding:12px 5px}
+.gz_con .app_hang{ left:261px}
+.gz_con .app_hang a{ border-radius:0 5px 5px 0}
+.gz_con .gdc_btn{ width:242px;}
+.gz_con .app_btn li{ width:111px; margin-left:10px; float:left}
+.gz_con .app_btn li .btn_phone,.gz_con .app_btn li .btn_velocity,.gz_con .app_btn li .btn_normal{ width:110px;}
+.gz_con .app_btn li .gz_ewm,.gz_con .app_btn li .gz_lb{ width:52px;}
+.gz_con .app_btn li .gz_lb{ margin-left:2px;}
+.gz_con .gdc_info{ width:232px; padding-bottom:10px}
+.gz_main .syvd_list li{ border-top:none; border-bottom:1px solid #eee; padding:15px 10px}
+.gz_main .wz_box{ padding:5px 15px}
+.gz_main .wz_box h1{ font:normal 20px/50px 'MicroSoft YaHei';}
+.gz_main .wz_inf{ margin:0 0 15px 0}
+.gz_sub .list_jp{ padding:0}
+.gz_sub .list_jp li{ width:250px; margin:5px 0 10px 10px}
+.gz_sub .list_jp li .app_name{ width:180px}
+
+/*libao*/
+.lb_table{ width:100%; margin-bottom:30px}
+.lb_table th{ height:35px; background:#ebebeb; font:normal 14px/35px ''; color:#666}
+.lb_table td{ font:normal 12px/20px ''; color:#666; padding:10px}
+.lb_table td h3{ font:normal 14px/30px 'MicroSoft YaHei'; color:#333}
+.lb_yes,.lb_no{ width:60px; height:22px; text-align:center; font:normal 12px/22px ''; color:#fff; display:inline-block}
+.lb_yes{ background:#4AC15C}
+.lb_no{ background:#ccc}
+
+.lb_info{ width:410px; position:relative}
+.lb_info p{ height:60px; overflow:hidden}
+.lb_info span{ color:#29A8E4; position:absolute; bottom:0; left:0; cursor:pointer}
+
+.lb_list{ overflow:hidden}
+.lb_list li{ border-top:1px solid #eee; padding:15px; overflow:hidden}
+.lb_list li img{ width:100px; height:100px; float:left}
+.lb_mid{ width:410px; margin:0 20px; float:left}
+.lb_mid h3{ height:38px; font:normal 16px/38px 'MicroSoft YaHei'; overflow:hidden}
+.lb_mid h3 a{ color:#333}
+.lb_mid p{ font:normal 12px/20px 'MicroSoft YaHei'; color:#999}
+.lb_mid p b{ color:#f60; font-weight:normal}
+.lb_mid p i,.lb_mid p em{ font-style:normal; display:inline-block; vertical-align:text-top}
+.lb_mid p em{ width:350px;}
+.brn_lb{ width:100px; height:35px; background:#4AC15C; font:normal 14px/35px 'MicroSoft YaHei'; color:#fff; text-align:center; margin-top:30px; display:inline-block}
+
+/**/
+.pc_installation{ font:normal 12px/24px ''; padding:15px 20px; border:1px solid #4ac15c; background:#F1FFDF; color:#444}
+.btn_pcin{ border:1px solid #4ac15c; color:#308D3E; font-weight:bold; padding:3px 10px; margin:10px 15px 5px 0; display:inline-block;}
+
+
+.lb_pop{ padding:20px 15px;}
+.lb_pop table{}
+.lb_pop th,.lb_pop td{ font:normal 13px/20px 'MicroSoft YaHei'; padding:8px; vertical-align:top;}
+.lb_pop th{ width:100px; color:#666; text-align:right}
+.lb_pop td span{ display:inline-block; margin-right:12px; vertical-align:middle}
+.btn_lq{ width:325px; height:50px; font:normal 20px/50px 'MicroSoft YaHei'; color:#09a600; text-align:center; border:1px solid #09a600; margin:10px auto}
+.numSlider{ width:200px; height:12px; background:#ddd;}
+.numSlider b{ height:12px; background:#09a600; display:inline-block}
+
+/**/
+.cai_list{ padding-top:10px; overflow:hidden}
+.cai_list li{ width:163px; margin:0 0 15px 18px; float:left}
+.cai_list img{ width:60px; height:60px; margin-right:10px; float:left}
+.cai_list section{ width:93px; float:left}
+.cai_list h3{ width:92px; font:normal 12px/20px 'MicroSoft YaHei'; overflow:hidden}
+.cai_list h3 a{ color:#333}
+.cai_list p{ height:20px; font:normal 12px/20px Arial; color:#999; padding:0; overflow:hidden}
+.cai_list p a{ color:#4ac15c; text-decoration:underline}
+
+/**/
+.version_down{}
+.vers_tit,.queer_tit{ height:40px; border-bottom:1px solid #eee;}
+.vers_tit li,.queer_tit li{ width:148px; font:normal 14px/40px 'MicroSoft YaHei'; color:#666; text-align:center; border-right:1px solid #eee; float:left; cursor:pointer}
+.vers_tit li.vers_on,.queer_tit li.queer_on{ font-weight:bold; border-top:1px solid #4ac15c; color:#333}
+.queer_tit li a{ color:#666}
+.queer_tit li.queer_on a{ color:#333}
+
+.vers_con{ padding:20px; overflow:hidden;border-bottom:1px solid #eee;}
+.vers_con img{ width:72px; height:72px; float:left}
+.vers_con h3{ width:280px; font:normal 16px/30px ''; padding:6px 15px; float:left}
+.vers_con h3 b{ font:normal 12px/30px ''; color:#999; display:block}
+.vers_btn{ height:36px; font:normal 16px/36px 'MicroSoft YaHei'; padding:0 20px; margin:18px 0 0 15px; float:right; display:inline-block}
+.vers_btn:hover{ opacity:0.9}
+.down_green{ background:#4ac15c; color:#fff}
+.down_blue{ background:#5CAAE6; color:#fff}
+.down_grey{ background:#eee; color:#999}
+
+/*******搜索提示框******/
+.ly-searchkou{text-align:center;background:#fff;padding:60px 0;width:980px;margin:10px auto;}
+.ly-searchkou p{font-size:24px;color:#666;}
+.ly-searchkou p span{color:#FF0000;}
+.module .btitle h2 .ly-more{float:right;}
+.ly-more:hover{color:#F36E5D;text-decoration: none;}
+.ly-moreh{width:98%;}
+
+/********map**********/
+.ly-content-bg{width:100%;padding:20px 0;background:#f8f8f8;}
+.ly-content-bg .ly-content{width:936px;margin:0 auto;padding:30px;background:#fff;}
+.ly-content .ly-h1{border-bottom:1px solid #ccc;line-height:40px;font-size:20px;}
+.ly-map{padding:20px}
+.ly-map h2{line-height:30px;border-bottom:1px dashed #ccc;background:url(../images/map-san.png) no-repeat left center;text-indent:10px;}
+.ly-map h2 a{color:#4e4e4e;font-size:16px;}
+.ly-map ul li{display:inline-block;padding:10px 10px;font-size:12px;}
+.ly-map ul li a{color:#666;}
+.ly-map ul li:hover a{color:#84C1E8;text-decoration:underline;}
+/**开服页面**/
+.clear{clear:both;display:block;height:0;visibility:hidden}
+.fl{float:left;}
+.fr{float:right;}
+.w1000{width:980px;margin:0 auto;}
+.bac-fff{background:#fff;padding:0 16px 40px;margin-bottom:40px;border:1px solid #F0F0F0;}
+.mt30{margin-top:30px;}
+.mt30 .mt16{margin-top:16px;padding:0 10px 20px;}
+.col-ec6{color:#ec6f49;}
+.k-title .fl{padding-left: 7px;border-left: 6px solid #4AC15C;color: #666;}
+.k-title .fr a{display: inline-block;padding:0 10px;height:28px;font-size:12px;color:#333;text-align:center;line-height:28px;background: #fff;}
+.k-title .fr .ly-current{color:#fff;background:#4AC15C;}
+.k-title .fr a:hover{color:#fff;background:#4AC15C;}
+.lk-table{background: #fff;padding-bottom:20px;margin-bottom:20px;}
+.lk-table tr,.lk-table td{border-bottom:1px dashed #ccc;}
+.lk-table th,.lk-table td{padding:16px 0;text-align: center;}
+.lk-table td{font-size: 14px;}
+.lk-table .k-btn,.kf-btn{display: inline-block;width:72px;height:22px;text-align: center;line-height: 22px;background:#4AC15C;color:#fff;border-radius:4px;}
+.lk-table .bac-ec{background:#ec6f49;}
+.lk-table .k-btn:hover,.kf-pic li a:hover,.korg-btn:hover,.kgreen-btn:hover,.kblue-btn:hover,.kf-btn:hover{opacity: .8;filter:alpha(opacity=80);}
+.kg-title{line-height:50px;height:50px;border-bottom:1px solid #ccc}
+.kf-game{border-bottom:1px dashed #ccc;padding-bottom:30px;}
+.kf-pic{width:500px;margin-top:16px;}
+.kf-pic li img{margin-right:16px;}
+.kf-pic li{font-size:12px;color:#666;line-height:20px;}
+.kf-pic li a,.k-range a,.kf-pic li .lq{display: inline-block;height:42px;line-height: 42px;width:172px;text-align:center;background:#4AC15C;color:#fff;font-size:14px;margin-top:22px;}
+.kf-pic li .lq{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;height:40px;border:1px solid #4AC15C;color:#333;background:#fff;}
+.fuzhi{vertical-align: top; margin-left:10px;height: 42px;line-height: 42px;width:60px;text-align: center;background: #4AC15C;color: #fff;font-size: 14px;margin-top: 22px;border:0;}
+.k-range a{width:142px;margin:0;border:1px solid #ccc;color:#333;background: #fff}
+.k-range{font-size: 14px;color:#666;margin:16px 100px 0 0;}
+.kf-down{margin:50px 0 0 0}
+.kg-gtitle{border-bottom:1px solid #4AC15C;}
+.kf-p{margin:16px 0;font-size:14px;color:#666;}
+.g-style li span{display: inline-block;width:6px;height:6px;border-radius: 3px;background:#ccc;margin:0 8px;}
+.g-style li{font-size:14px;color:#666;}
+.bor-right{border-right:1px dashed #ccc;width:616px;overflow: hidden}
+.kf-down :hover{background:#4AC15C;color:#fff;border:0;}
+.kg-ort{border-bottom:1px solid #4AC15C;}
+.kg-ort span{color:red;}
+.kf-tao{margin-right:-20px;}
+.kf-tao dl{width:260px;float:left;border:1px solid #ccc;padding:16px;margin-top:16px;margin-right:21px;height:106px;position: relative;}
+.kf-tao dl dt{font-size:14px;color:#333;font-weight: bold;}
+.kf-tao dl dd{font-size:12px;color:#666;margin-top:16px;}
+.kf-tao .dd-btn{margin-top:20px;}
+.kf-tao .width{height:30px;overflow: hidden;line-height: 16px;}
+.dd-btn a{width:84px;height:30px;color:#fff;line-height:30px;display: inline-block;text-align:center;}
+.kblue-btn{background:#4dbaf3;}
+.kgreen-btn{background:#4AC15C;}
+.korg-btn{background:#4AC15C;}
+.w500{width:480px;background: #fff;margin-top:16px;}
+.block-title {display: block;margin: 10px;padding-left: 7px;border-left: 3px solid #4AC15C;color: #333;font-size:20px;font-weight: bold}
+.kf-btn{width:50px;height:26px;line-height: 26px;border-radius:0;}
+.kf-btn:hover{color:#fff;}
+.table-box{padding:0 10px 20px;background:#fff;}
+.kf-gray{height:18px;width:200px;background:#ccc;display: inline-block;vertical-align: text-bottom;margin-top:10px;border-radius: 10px;}
+.kf-frame{position: fixed;left:0;top:0;width:100%;height:100%;z-index: 100001;background: rgba(0,0,0,.3);}
+.frame-con{width:360px;height:150px;position: relative;left:50%;top:50%;margin-left: -180px;margin-top: -75px;background: #fff;border:1px solid #4AC15C;}
+.kf-tishi{height: 26px;background: #f2f2f2;line-height: 26px;padding:0 10px;font-size: 14px;color:#333;}
+.ts-img{margin:6px 6px 0 0;cursor: pointer;}
+.ts-con{padding:30px 0;font-size: 16px;color:#333;text-align:center;}
+.ts-btn-box{width: 100%;text-align: center}
+.ts-btn{width:70px;height:30px;background:#4AC15C;border:0;color:#fff;font-size: 16px;cursor: pointer;}

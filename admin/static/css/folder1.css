@@ -1,0 +1,46 @@
+/****RESET****/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+    margin:0;padding:0;}
+html body div.clear,
+html body span.clear{ background: none; border: 0; clear: both; margin: 0; padding: 0;}
+.clearfix:after { content: "."; display: block;height: 0; clear: both; visibility: hidden;}
+.clearfix{*+height:1%;}
+h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {font-size:100%; font-weight: normal; margin:0px; padding:0px; list-style:none;}
+table{ border-collapse:collapse;border-spacing:0;}
+table td{ word-break:break-all;}
+img,fieldset{ border:0; }
+*:focus{ outline:0;}
+input.button,button{ cursor:pointer;overflow:visible;/*Fix IE lt 8 bug*/ }
+textarea{ overflow:auto;/*Hide the scrollbar for IE*/ }
+
+/* ---------->>> 局部定义 <<<-----------*/
+body{ margin:0 auto; font-size:14px; font-family: "Microsoft Yahei";-webkit-text-size-adjust: none;  }
+
+/****head*****/
+.head h1{width:100%;height:40px;line-height:40px;text-indent:20px;font-size:16px;border-bottom:2px solid #ccc;cursor:default}
+/*<!--.head .ula{height:26px;width:100%;margin:0 auto;}
+.head .ula>li{float:left;width:33.3%;background:#ededed;height:30px;line-height:30px;}
+
+.head .ula1{height:26px;width:100%;margin:0 auto;}
+.head .ula1 li img {margin:2px 6px 0 10px;display:block;float:left;}
+.head .ula1>li{float:left;width:33.3%;height:30px;line-height:30px;}
+.head .ula11{height:26px;width:100%;margin:0 auto;}
+.head .ula11 li img {margin:3px 6px 0px 10px;height:20px;width:22px;display:block;float:left;}
+.head .ula11>li{float:left;width:33.3%;height:30px;line-height:30px;}
+.head ul:hover{background:#6CF;}-->*/
+.head .ula{height:26px;width:100%;margin:0 auto;line-height:26px;}
+
+.head .ula li{float:left;cursor:pointer}
+.head .ula .hli1{width:70%;}
+.head .ula .hli2{width:15%;}
+.head .ula:hover{background:#E5F3FF;}
+
+
+
+.head .ula11{clear:both;height:26px;width:100%;margin:0 auto;line-height:26px;}
+.head .ula11 a{line-height:26px;}
+.head .ula11 li{float:left;cursor:pointer}
+.head .ula11 .hli1{width:70%; }
+.head .ula11 .hli2{width:15%;}
+.head .ula11:hover{background:#E5F3FF;}
+.head .ula11 .hli1 img{ float: left; display:block;margin-right:6px;}

@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+.boxy-wrapper{position:absolute;}
+.boxy-wrapper.fixed{position:fixed;}
+/* Modal */ 
+.boxy-modal-blackout{position:absolute; background-color:black; left:0; top:0;} 
+/* Border */
+.boxy-wrapper{empty-cells:show;}
+.boxy-wrapper .top{ height:0;}
+/* Title bar */
+.boxy-wrapper .title-bar{ height:40px; background:#eee; border-bottom:1px solid #fff; padding-left:20px; position:relative;}
+.boxy-wrapper .title-bar.dragging{cursor:move;}
+.boxy-wrapper .title-bar h2{ font:bold 14px/40px Arial; color:#666}
+.boxy-wrapper .title-bar .close{ width:40px; height:40px; background:url(../images/pop_close.png) no-repeat; position:absolute; top:0; right:0;}
+/* Content Region */
+.boxy-inner{background-color:white; padding:0}
+/* Question Boxes */
+.boxy-wrapper .question{width:350px; min-height:60px; _height:60px;}
+.boxy-wrapper .answers{text-align:right;}
+/*confirm btn by zhangxinxu http://www.zhangxinxu.com*/
+.boxy-btn1,.boxy-btn2,.boxy-btn3{padding:3px 12px 1.9px; border-width:1px; border-style:solid; letter-spacing:1px; line-height:15px; cursor:pointer; overflow:visible;} 
+.boxy-btn1{background-color:#425f99; border-color:#5A7EC6 #2C3E5F #2C3E5F #5A7EC6; color:white;}
+.boxy-btn2{background-color:#ECE9D8; border-color:#eeeeee #bbbbbb #bbbbbb #eeeeee; color:#333333;}
+.boxy-btn3{background-color:#EAEAEA; border-color:#EAEAEA #aaaaaa #aaaaaa #EAEAEA; color:#333333; padding:3px 5px 1.9px;}
+.boxy-btn3:hover{background-color:#cad5eb; border-color:#CED8E3 #A2ADBC #A2ADBC #CED8E3;}
+
+
+
+
+
+
+.gx-tab-title{ float: right; padding: 0 20px 0 20px}
+.gx-tab-title li{ font-size:14px; line-height: 43px; padding:0 10px; cursor: default; float: left}
+.gx-tab-title li.current{ color: #f36e5d; font-weight: 700}    
+.gx-tab-content .gx-text{ display: none}
+
+.gx-sec-1{border: 1px solid #eaeaea; padding: 0 0 10px}
+
+.rs{padding: 21px 0 0;}
+
+#star {
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;
+    width: 600px;
+}
+#star ul, #star span {
+    display: inline;
+    float: left;
+    height: 19px;
+    line-height: 19px;
+}
+#star ul {
+    margin: 0 10px;
+}
+#star li {
+    background: url("../images/star.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    float: left;
+    text-indent: -9999px;
+    width: 24px;
+}
+#star strong {
+    color: #f60;
+    padding-left: 10px;
+}
+#star li.on {
+    background-position: 0 -28px;
+}
+#star p {
+    background: url("../images/icon.gif") no-repeat scroll 0 0;
+    display: none;
+    height: 60px;
+    padding: 7px 10px 0;
+    position: absolute;
+    top: 20px;
+    width: 159px;
+}
+#star p em {
+    color: #f60;
+    display: block;
+    font-style: normal;
+}
+.comment_ipt {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    height: 24px;
+    line-height: 24px;
+    width: 100px;
+	font-size:12px;
+}
+.comment_l {
+    margin-right: 8px; font-size:12px;
+}
+
+
+.mod-cmt-list .hd{margin-bottom: 10px;}
+.mod-cmt-list .f5{float: right;color: #888999;padding-left: 15px;background: url(../images/softgameico.png) -194px -186px no-repeat;}
+.mod-cmt-list .cmt-tab,.mod-cmt-list .total{float: left;}
+.mod-cmt-list .cmt-tab{width: 200px;}
+.mod-cmt-list .cmt-tab li{float: left; font-size:12px;}
+.mod-cmt-list .cmt-tab li a{padding: 0 9px;border-left: 1px solid #ccc;}
+.mod-cmt-list .cmt-tab .first a{border-left:none}
+.mod-cmt-list .cmt-tab li.selected a{color: #F24445;}
+.mod-cmt-list .cmt-tab li.first a{padding-left: 0;border-left: 0 none;}
+.mod-cmt-list .total{color: #888999;}
+.mod-cmt-list .bd li{vertical-align: middle;border-top: 1px solid #f0f0f0;padding:20px 0;}
+.mod-cmt-list .pic{float: left;width: 48px;height: 48px;margin-right: 10px;}
+.mod-cmt-list .pic img{width: 48px ;height: 48px}
+.mod-cmt-list .ft{ clear:both; text-align:right;}
+.cmt-gotop a{background:url(../images/softgameico.png) -193px -333px no-repeat;padding-left: 15px; color:#888; font-size:12px;}
+
+
+

@@ -1,0 +1,111 @@
+.dn{display:none!important;}
+.hidden { visibility:hidden!important}
+.clearfix:after{ clear: both; content: ""; display: table;}
+* html .clearfix{ zoom:1;}
+*+ html .clearfix{ min-height:1px;}
+/*topnav*/
+    #siteNav,.followSina,.followWx,.arrDrop,.navIcon,.siteNavMenu li.hover .navIcon,.rb,.lb,.guideList li ul li a span.newIcon,
+    .guideList li ul li a span.hotIcon,.thirdP .qq,.thirdP .sina,.menuHide .userInfo .rb{background:url(http://raw.android.d.cn/cdroid_res/web/common/siteNavBg.png) no-repeat;}
+    #siteNav{background-position:0 -115px;background-repeat:repeat-x;line-height:40px;font-family:Arial;height:40px;width:100%;width:100%;color:#5b5b5b; position:relative; z-index:200;}
+    #siteNav .layout{margin:0 auto;width:1190px;height:40px;}
+    .fr{float:right!important;}
+    .siteNavMenu,.siteNavMenu li{float:left;}
+    .siteNavMenu li{position:relative;}
+    .siteNavMenu li a{text-decoration:none;color:#5b5b5b;}
+    .siteNavMenu li a:hover{text-decoration:none;color:#2e2e2e; font-weight: normal;}
+    .siteNavMenu li span,.siteNavMenu li a.login{float:left;cursor:pointer;}
+    .followSina,.followTencent,.followWx{margin-top:8px;float:left;line-height:24px;display:block;}
+    .followSina{background-position:-99px 0;}
+    .siteNavMenu li.hover .followSina{background-position:-124px 0;}
+    .followTencent{background-position:-49px 0;}
+    .siteNavMenu li.hover .followTencent{background-position:-74px 0;}
+    .followWx{background-position:1px 0px;float:left;margin:8px 0 0 -4px;_margin-left:0;}
+    .siteNavMenu li.hover .followWx{background-position:-24px 0;}
+    .arrDrop,.arrDropNo{width:7px;height:4px;line-height:0px;font-size:0;display:block;float:left;margin:18px 4px 0;background-position:-168px -25px;}
+    .arrDropNo{ margin-right: 0px;}
+    .siteNavMenu li.hover .arrDrop{background-position:-168px -30px;}
+    .siteNavMenu li .menuShow{width: 100%;z-index:10009;padding:0 0px 0 7px;height:40px;cursor:pointer;float:left;position:relative;}
+    /*.siteNavMenu li.hover .menuShow{background-color:#FFF;border:1px solid #dedede;border-bottom:0;border-top:0;padding:0 0 0 6px;height:40px;}*/
+    .siteNavMenu li .menuHide{display:none;position:absolute;top:39px;left:0;_left:-1px;background-color:#FFF;border:1px solid #dedede;border-top-color: #fff;z-index:10008; }
+    .code{padding:10px;}
+    .siteNavMenu li .menuHide a{color:#4F4F4F;}
+    .siteNavMenu li .menuHide a:hover{color:#186DC3;text-decoration:underline;}
+    .siteNavMenu li .menuShow .message{margin:13px 2px 0;background-color:#FF6600;text-align:center;padding:0 4px;color:#FFF; border-radius:4px;font:normal 10px/12px Verdana;}
+    .navIcon,.siteNavMenu li.hover .navIcon{width:12px;height:10px;margin:15px 4px 0 0;font-size:0;line-height:0;display:block;background-position:-149px 0;}
+    .siteNavMenu li.hover .navIcon{background-position:-162px 0;}
+    .menuHide form .tipsText{color:#FF6600;}
+    .menuHide form,.thirdP{padding:10px;width:240px;line-height:26px;color:#9a9a9a;}
+    .menuHide form input{margin-bottom:10px;}
+    .menuHide form .inputText,.menuHide form .inputTextOut{width:228px;padding:0 5px;height:30px;line-height:30px;border:1px solid #e1e1e1;border-radius:2px;}
+    .menuHide form .inputTextOut{border:1px solid #ff9900;}
+    .menuHide form .submit{width:240px;height:34px;margin-bottom:5px;border-radius:2px;background-color:#ff9900;border:0;color:#FFF;font:bold 14px/34px normal;cursor:pointer;}
+    .menuHide form .check{margin:7px 2px 0 0;*margin-top:3px;vertical-align:middle;}
+    .remember{text-align:right;}
+    .remember label{float:left;text-align:left;}
+    .remember label *{float:left;}
+    .siteNavMenu li .menuHide .remember a{color:#186DC3;}
+    .thirdP{border-top:1px solid #e1e1e1;background-color:#f9f9f9;padding:0 10px 6px;}
+    .thirdP a{margin-right:10px;}
+    .thirdP .qq,.thirdP .sina{display:inline-block;color:#FFF!important;font:normal 12px/24px normal;width:55px;height:24px;padding-left:28px;margin:0 10px 4px 0;}
+    .thirdP .qq{background-position:0 -50px;}
+    .thirdP .qq:hover{background-position:-84px -50px;}
+    .thirdP .sina{background-position:0 -25px;}
+    .thirdP .sina:hover{background-position:-84px -25px;}
+    .thirdP .qq:hover,.thirdP .sina:hover{text-decoration:none!important;}
+    .guideList{width:948px;float:left;background-color:#FFF;height:140px;}
+    .guideList li{border-right:1px solid #ededed;width:174px;padding:5px 0 0 10px;height:135px;cursor:default;line-height:28px;}
+    .guideList li.client{width:198px}
+    .guideList li.last{border:0;}
+    .siteNavMenu li .menuHide .guideList li h4 a,.siteNavMenu li .menuHide .guideList li h4{color:#ff6600;font:bold 16px/30px normal;}
+    .guideList li ul{width:100%;}
+    .guideList li ul li{width:50%;height:auto;display:inline;padding:0;border:0;}
+    .guideList li ul li a{position:relative;}
+    .siteNavMenu li .menuHide .guideList li ul li strong a{color:#F42916;}
+    .guideList li ul li a span{display:block;width:11px;height:11px;overflow:hidden;position:absolute;right:-8px;top:-2px;_top:-2px;}
+    .guideList li ul li a span.newIcon{background-position:-149px -13px;}
+    .guideList li ul li a span.hotIcon{background-position:-161px -13px;}
+    .rb{background-position:right -75px;padding-right:12px;}
+    .lb{background-position:left -75px;padding-left:10px;margin-left:10px;}
+    .menuHide .userPanel{padding:10px;width:280px;height:100px;line-height:26px;}
+    .menuHide .userFace{width:100px;height:100px; margin-right:10px;float:left;display:inline;}
+    .menuHide .userInfo{float:left;}
+    .menuHide .userInfo a{color:#186DC3;}
+    .menuHide .userInfo .rb{background-position:right -86px;}
+    .menuHide .userInfo a em{color:#ff6600;}
+    .r10{left:auto!important}
+    .r0{right:0;left:auto!important;}
+    #topDMainBox{right:7px;_right:-6px;left:auto;}
+    .user-head{
+    	float: left;
+    	width: 18px;
+    	height: 18px;
+    	margin-top: 10px;
+    	margin-right: 5px;
+    	border-radius: 50%;
+    }
+	.orange{
+		color: #ff7800;
+	}
+	.siteNavMenu li span.orange{
+		float: none;
+	}
+	.siteNavMenu li .r10{
+		border-top-color: #fff;
+		width: 100%;
+		
+	}
+	.r10 a{
+		display: block;
+		color: #807f7f;
+		text-align: center;
+		line-height: 40px;
+	}
+	.siteNavMenu li .r10 a:hover{
+		background: #ededed;
+		color: #ff7800;
+	}
+	.user-vip{
+		position: absolute;
+		top: 22px;
+		left: 20px;
+	}

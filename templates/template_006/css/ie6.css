@@ -1,0 +1,28 @@
+/* CSS Document */
+h1,h2{_white-space:normal;}
+.txt_search{ _height:29px;}
+.btn_search{ _width:85px;}
+.min ul li em,.market em,.em_sf{ _display:none;}
+.news_list li,.list_tj li p{_white-space:normal;}
+.more s,.bible_more s{ _display:none;}
+.b_all{ _height:100%;}
+.con_main{_overflow:hidden;}
+.con_sub{ _overflow:hidden;}
+.list_tj,.rom_list{ _height:100%;}
+.list_jp li,.rom_list li,.cbook li{ _display:inline;}
+.list_jp li .pic{ _position:static}
+.list_jp li h1{ _float:left;}
+.list_jp li p{ _float:left;}
+.pic_gap{ _font-size:0;}
+.b_sub img{ _margin:-3px;}
+.tab_t li,.tag_pad{ _font-size:0;}
+.order a s{ _display:none;}
+.app_list,.tli_box{ _height:100%;}
+.app_list li{ _display:inline;}
+.xt_pop em{ _display:none;}
+.zt_list .cbook{ _height:100%;}
+.bz_list li{ _display:inline;}
+.app_leftinfo{ _position:relative}
+.app_hang{ _left:0}
+.cai_list li{ _display:inline;}
+.app_name{ _width:90px; _height:30px; _margin-top:5px; _float:left}

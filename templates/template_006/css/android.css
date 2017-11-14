@@ -1,0 +1,71 @@
+.rslides_tabs .rslides_here a{background:rgba(0,0,0, .6);background:#4AC15C}
+.min_on{ background:#4AC15C;}
+.search,.btn_search,.m_sub,.news_list li em{ background:#4AC15C;}
+.more{ color:#4AC15C;}
+.more s{ background-position:-50px -55px;}
+.main_tit,.all_tit{ border-top:2px solid #4AC15C;}
+.tit_on{ background:#4AC15C;}
+.c_tab li.on,.wy_tit li.on,.r_tab a.on{ border-bottom:1px solid #4AC15C;}
+.bible a{ border:1px solid #4AC15C; color:#4AC15C;}
+.bible_more{ background:#4AC15C;}
+.tab_t li.hover{ background:#4AC15C;}
+.sort a:hover{ border:1px solid #4AC15C;}
+.sort a.sort_on{ background:#4AC15C; border:1px solid #4AC15C;}
+.hot_label a{ border:1px solid #4AC15C; color:#4AC15C;}
+.order a.order_on{ background:#4AC15C; border:1px solid #4AC15C; color:#fff;}
+.order a.order_on s{ background-position:-46px -110px;}
+.tag_pad{ background-position:0 -315px;}
+.page a:hover{ border:1px solid #4AC15C; color:#4AC15C;}
+.page a.page_on{ background:#4AC15C; border:1px solid #4AC15C; color:#fff;}
+.choose{ color:#4AC15C;}
+.xt_pop a:hover{ color:#4AC15C;}
+/*ph*/
+.ph_tit{ border-top:2px solid #4AC15C;}
+.sear_list li h1 a:hover{ color:#4AC15C;}
+.lx_tips a:hover{ color:#4AC15C;}
+.lx_tips a.on{ background:#4AC15C; border:1px solid #4AC15C; color:#fff;}
+.lx_tips a.on:hover{ color:#fff;}
+
+.tli_slide li p a:hover{ color:#4AC15C;}
+.btn_app{ background:#4AC15C;}
+.btn_app:hover{ background:#5CC76C;}
+.zt_hot li p a:hover{ color:#4AC15C;}
+.jx_list a:hover{ color:#4AC15C;}
+.rom_dl dd a.rom_on{ background:#5CC76C; color:#fff;}
+.rom_dl dd a:hover{ color:#4AC15C;}
+.rom_wz li a:hover{ color:#4AC15C;}
+.rzy_list li td a{ color:#4AC15C;}
+.rzy_btn a{ background:#4AC15C;}
+.rzy_btn a:hover{ background:#5CC76C;}
+.sq_btn,.sq_list li .btn{ background:#4BC15D;}
+.sq_btn:hover,.sq_list li .btn:hover{ background:#5CC76C;}
+.app p b a:hover{ color:#4AC15C;}
+.btn_sj{ background:url(../images/icon.png) 10px -410px no-repeat #4AC15C; border:1px solid #51AF5F;}
+.btn_dn,.btn_91{ background:url(../images/icon.png) 10px -450px no-repeat #E6F5D6; border:1px solid #D1E0BA; color:#0D800C;}
+.btn_91{ background-position:15px -490px;}
+.btn_dn:hover,.btn_91:hover{ background-color:#D0EAB4;}
+.phone_box{ border:3px solid #63C671;}
+.p_more a{ color:#4AC15C;}
+.wz_list li a:hover{ color:#4AC15C}
+.pl_btn{ background:#4AC15C; border:1px solid #51AF5F; color:#fff;}
+.btn_normal:hover{ border:1px solid #51AF5F;}
+.msg_btn{ background:#51AF5F;}
+
+.rom_inf td a{ color:#4ABF59;}
+.rom_btn{ background:#4AC15C; border:1px solid #4AC15C;}
+.rom_btn:hover{ border:1px solid #37A447;}
+.rom_tab li.active{ border-top:1px solid #51AF5F}
+.half_box li a:hover{ color:#4AC15C}
+.half_box dd a:hover{ color:#4AC15C}
+.zx_link a{ color:#4AC15C}
+.wz_downinf p b a{ color:#4AC15C;}
+.btn_new{ color:#4AC15C;}
+.gjt_con li p a:hover,.gb_con a:hover{ color:#4AC15C; text-decoration:underline;}
+.glb_btn:hover{ color:#4AC15C;}
+.game_ngc li p a:hover{ color:#4AC15C;}
+.ft_a a:hover{ color:#4AC15C;}
+.ft_contact a:hover{ color:#4AC15C;}
+.jx_info h3 a{ color:#4AC15C}
+.ph_no1 h3 a{ color:#4ac15c;}
+.hang_1{ height:30px; background:url(../images/app_ios.png) no-repeat #5CAAE6; padding:0 5px}
+.hang_3{ background:#4ac15c}

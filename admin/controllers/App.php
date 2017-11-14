@@ -19,7 +19,6 @@ class App extends MY_Controller {
         $this->load->model('m_Special');
         $this->load->model('m_Advert');
         $this->load->model('m_Necessary');
-
     }
 
     /**
